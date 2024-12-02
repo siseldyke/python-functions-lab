@@ -88,3 +88,53 @@ def sum_to(n):
 
 print('Exercise 5:', sum_to(6))
 print('Exercise 5:', sum_to(10))
+
+# Exercise 6: Find the Largest Number
+#
+# Write a function named `largest` that takes three integers as arguments and returns the largest of them.
+#
+# Examples:
+# largest(1, 2, 3) should return 3.
+# largest(10, 4, 2) should return 10.
+#
+# Define your function and test it with different inputs.
+
+def largest (a, b, c):
+    return max(a, b, c)
+print('Exercise 6:', largest(1, 2, 3))
+print('Exercise 6:', largest(10, 4, 2))
+
+# Exercise 7: Calculate a Tip
+#
+# Create a function called `calculate_tip`. It should take the bill amount and the tip percentage (as a whole number).
+# The function should return the amount of the tip.
+#
+# Examples:
+# calculate_tip(50, 20) should return 10.
+#
+# Write your function and test its output below.
+
+def calculate_tip(bill, tip):
+    return (bill + (bill * (tip / 100)))
+print('Exercise 7:', calculate_tip(50, 20))
+print('Exercise 7:', calculate_tip(145, 67))
+
+# Exercise 8: Calculate Product of Numbers
+#
+# Write a function named `product` that takes an arbitrary number of numbers, multiplies them, and returns the product.
+# Review your notes on *args for handling an arbitrary number of arguments.
+#
+# Examples:
+# product(-1, 4) should return -4.
+# product(2, 5, 5) should return 50.
+#
+# Define the function and call it with different sets of numbers to test.
+
+def product(*args):
+    result = 1
+    for num in args:
+        result *= num
+    return result
+
+print('Exercise 8:', product(2, 5, 5))
+print('Exercise 8:', product(-1, 4))
